@@ -78,7 +78,7 @@ function dias(dataText) {
       // Calcular el número de días pasados dividiendo por milisegundos en un día.
       const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   
-      return console.log(daysDifference); // Retornará el número de días transcurridos desde entonces o un objeto de error si el formato no es válido.
+      return document.querySelector('#pasado').innerHTML = ("Han pasado " + daysDifference); // Retornará el número de días transcurridos desde entonces o un objeto de error si el formato no es válido.
     } else {
       // Si no se obtuvieron 6 partes, indicar un error.
       return {
